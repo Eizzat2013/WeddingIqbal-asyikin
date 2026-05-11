@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walimatul Urus | Iqbal & Asyikin</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="overflow-hidden"> 
+    
+    <audio id="weddingMusic" loop>
+        <source src="Music Background/background music.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="cover">
+        <div class="text-center p-10 glass-dark rounded-3xl border border-white/20 flex flex-col items-center" data-aos="zoom-in">
+            <h2 class="serif-title text-white/80 tracking-[0.4em] text-[10px] mb-2 uppercase">The Wedding Of</h2>
+            <h1 class="script-font gold-text text-6xl mb-12">Iqbal & Asyikin</h1>
+            
+            <button onclick="openInvitation()" class="btn-open shadow-xl">
+                BUKA UNDANGAN
+            </button>
+        </div>
+    </div>
+
+    <div class="live-bg"></div>
+
+    <div class="fixed-nav-container">
+        <nav class="nav-bar shadow-2xl flex justify-around items-center px-4">
+            <a href="#hero" class="nav-item"><i class="fas fa-home"></i></a>
+            <a href="#couple" class="nav-item"><i class="fas fa-heart"></i></a>
+            <a href="#event" class="nav-item"><i class="fas fa-map-marker-alt"></i></a>
+        </nav>
+    </div>
+
+    <main class="relative z-10">
+        <section id="hero" class="h-screen flex flex-col justify-center items-center text-center px-6 relative overflow-hidden">
+            <div class="landing-image-container">
+                <img src="3webp.webp" alt="Iqbal & Asyikin">
+            </div>
+
+            <div data-aos="fade-up" class="relative z-10">
+                <p class="arabic-text mb-4 text-3xl text-white">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+                <p class="uppercase text-[10px] tracking-[0.4em] text-white/70">Walimatul Urus</p>
+                <h1 class="script-font gold-text text-7xl md:text-8xl my-4">Iqbal</h1>
+                <p class="text-2xl italic text-white/40">&</p>
+                <h1 class="script-font gold-text text-7xl md:text-8xl my-4">Asyikin</h1>
+                <div class="mt-8 border-y border-white/20 py-3 w-56 mx-auto">
+                    <p class="text-xl font-bold tracking-[0.2em] text-white">31 MEI 2026</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="couple" class="min-h-screen flex flex-col md:flex-row bg-[#0a0e2e] overflow-hidden">
+            <div class="w-full md:w-1/2 h-[50vh] md:h-screen relative" data-aos="fade-right">
+                <img src="1webp.webp" alt="The Couple" class="absolute inset-0 w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-transparent via-transparent to-[#0a0e2e]"></div>
+            </div>
+
+            <div class="w-full md:w-1/2 p-10 md:p-20 flex flex-col justify-center items-center text-center bg-[#0a0e2e]">
+                <div data-aos="fade-left" class="max-w-md">
+                    <p class="gold-text tracking-[0.4em] text-[14px] md:text-[18px] mb-10 uppercase font-bold">Doa Buat Pengantin</p>
+                    <p class="arabic-text mb-8 text-4xl md:text-5xl gold-text">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+                    <p class="text-white/90 text-base md:text-lg italic mb-10 leading-relaxed">
+                        "Ya Allah, Ya Rahman, Ya Rahim, Kami memohon hidayah dan restu dari-Mu, berkatilah majlis ini, limpahkanlah baraqah dan rahmat ke atas kedua pasangan mempelai ini."
+                    </p>
+                    <h2 class="script-font gold-text text-6xl md:text-8xl mb-10">Iqbal & Asyikin</h2>
+                    <p class="text-white/90 text-base md:text-lg mb-12 leading-relaxed">
+                        "Seperti Engkau satukan hati Adam dan Hawa, Yusof dan Zulaikha dan seperti Engkau satukan hati Muhammad SAW dan Siti Khadijah."
+                    </p>
+                    <div class="pt-8 border-t border-white/10 w-full">
+                        <p class="text-gold italic text-sm md:text-base mb-2">"Dan Kami menciptakan kamu berpasang-pasangan"</p>
+                        <p class="text-white/40 text-[10px] tracking-widest uppercase text-center">Surah An-Naba (78:8)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="event" class="min-h-screen py-20 px-6 flex items-center justify-center">
+            <div class="glass-dark p-8 md:p-12 rounded-3xl border border-white/20 w-full max-w-5xl" data-aos="zoom-in">
+                <div class="flex flex-col md:flex-row gap-12 items-center">
+                    <div class="w-full md:w-1/2 text-center md:text-left space-y-6">
+                        <h2 class="serif-title gold-text text-2xl mb-2 uppercase tracking-widest">Undangan Walimatulurus</h2>
+                        <div class="space-y-4 text-white/80 text-sm leading-relaxed">
+                            <p class="italic text-gold font-bold">Assalamualaikum Warahmatullahi Wabarakatuh</p>
+                            <p>Mekar bunga di taman hati, menyunting kasih menjalin janji. Dengan penuh kesyukuran ke hadrat Ilahi, kami <strong>Encik Jeffrey & Keluarga</strong> menjemput kehadiran Tuan/Puan ke majlis kesyukuran putera kami:</p>
+                            
+                            <div class="py-6 border-y border-gold/20">
+                                <p class="script-font gold-text text-5xl mb-2">Muhammad Iqbal</p>
+                                <p class="text-xs opacity-60 mb-2 italic uppercase tracking-widest">Menyunting Kasih Permata Hati</p>
+                                <p class="script-font gold-text text-5xl">Nurasyikin</p>
+                            </div>
+
+                            <p class="text-[11px] italic opacity-70">"Dua jiwa, satu debar. Menganyam rindu menjadi restu, membina mahligai di bawah naungan-Mu."</p>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4 pt-4 text-xs tracking-widest uppercase">
+                            <div class="border-l-2 border-gold pl-3">
+                                <p class="text-gold font-bold">31 Mei 2026</p>
+                                <p class="opacity-50">Ahad</p>
+                            </div>
+                            <div class="border-l-2 border-gold pl-3">
+                                <p class="text-gold font-bold">12:30 PM</p>
+                                <p class="opacity-50">Hingga 5:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full md:w-1/2 space-y-6">
+                        <div class="text-center md:text-left">
+                            <p class="text-white font-bold text-lg">Dewan Maksak, Likas</p>
+                            <p class="text-white/60 text-xs uppercase">Kota Kinabalu, Sabah</p>
+                        </div>
+
+                        <div class="rounded-2xl overflow-hidden h-64 md:h-80 border border-white/10 shadow-lg relative bg-black">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.163820216666!2d116.101889!3d5.981889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x323b3eb355555555%3A0x2f15555555555555!2sDewan%20Maksak%20Sabah!5e0!3m2!1sen!2smy!4v1715420000000!5m2!1sen!2smy" 
+                                width="100%" height="100%" style="border:0; filter: invert(90%) hue-rotate(180deg);" allowfullscreen="" loading="lazy">
+                            </iframe>
+                        </div>
+
+                        <div class="flex flex-col gap-3">
+                            <a href="https://www.google.com/maps/search/?api=1&query=Dewan+Maksak+Sabah+Likas+Kota+Kinabalu" 
+                               target="_blank" 
+                               class="btn-open text-center text-xs uppercase py-4 shadow-2xl">
+                                Lokasi Majlis (Google Maps)
+                            </a>
+                            <p class="text-[10px] text-white/40 italic text-center">Kehadiran anda amat dihargai bagi menyerikan majlis kami.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

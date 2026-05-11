@@ -1,0 +1,146 @@
+:root {
+    --navy: #0a0e2e;
+    --gold: linear-gradient(135deg, #bf953f 0%, #fcf6ba 45%, #b38728 100%);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--navy);
+    overflow-x: hidden;
+    color: white;
+}
+
+/* Calligraphy font for high-end readability */
+.script-font {
+    font-family: 'Pinyon Script', cursive;
+}
+
+.live-bg {
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    background: linear-gradient(rgba(10, 14, 46, 0.85), rgba(10, 14, 46, 0.85)), 
+                url('gambar/background.webp');
+    background-size: 110% 110%;
+    background-position: center;
+    animation: slowZoom 40s infinite ease-in-out;
+}
+
+@keyframes slowZoom {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.landing-image-container {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.landing-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.18;
+    filter: grayscale(30%) brightness(50%);
+}
+
+.landing-image-container::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 60%, var(--navy) 100%);
+}
+
+#cover {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1.2s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.glass-dark {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.fixed-nav-container {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 90%;
+    max-width: 340px;
+    opacity: 0; 
+    pointer-events: none;
+    transition: opacity 1s ease;
+}
+
+.nav-bar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 100px;
+}
+
+.nav-item {
+    color: var(--navy);
+    font-size: 1.3rem;
+    transition: 0.3s;
+}
+
+.nav-item:hover {
+    color: #b38728;
+    transform: scale(1.2);
+}
+
+.serif-title { font-family: 'Cinzel', serif; }
+.arabic-text { font-family: 'Playfair Display', serif; }
+
+/* Golden Shine Logic */
+.gold-text {
+    background: var(--gold);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    background-size: 200% auto;
+    animation: shine 4s linear infinite;
+}
+
+@keyframes shine {
+    to { background-position: 200% center; }
+}
+
+.btn-open {
+    background: white;
+    color: var(--navy);
+    padding: 14px 40px;
+    border-radius: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: none;
+    cursor: pointer;
+}
+
+.btn-open:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(191, 149, 63, 0.3);
+}
+
+@media (max-width: 768px) {
+    #couple { flex-direction: column; }
+    .fixed-nav-container { bottom: 20px; width: 95%; }
+    .script-font { font-size: 3.5rem !important; }
+}
